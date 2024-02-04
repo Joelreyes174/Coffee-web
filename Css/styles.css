@@ -3,11 +3,16 @@
 }
 
 :root {
+	/** color **/
 	--Lb-color: #dcd7c9;
 	--b-color: #a27b5c;
 	--lblue-color: #3f4e4f;
 	--Dark-color: #2c3639;
 	--mint-color: #abc4aa;
+	/** font size **/
+	--header-text: 50px;
+	--description-text: 16px;
+
 }
 
 @font-face {
@@ -22,47 +27,202 @@ body {
 	padding: 0;
 }
 
-
-.material-symbols-outlined-search {
-	color: var(--Lb-color);
-	font-variation-settings:
-	'FILL' 0,
-	'wght' 500,
-	'GRAD' 200,
-	'opsz' 40
-}
-.material-symbols-outlined-profile {
-	color:var(--Lb-color);
-  	font-variation-settings:
-  	'FILL' 0,
-  	'wght' 500,
-  	'GRAD' 200,
-  	'opsz' 40
-}
-.material-symbols-outlined-cart {
-	color: var(--Lb-color);
-  	font-variation-settings:
-  	'FILL' 0,
-  	'wght' 500,
-  	'GRAD' 200,
-  	'opsz' 40
-}
-
-
-.end-section a {
-	color: var(--Dark-color);
+section {
+	background-color: var(--Lb-color);
+	display: inline-flex;
 }
 
 .box {
 	width: 100%;
-	height: 100px;
+	height: 50px;
+}
+
+/** For Display Tag **/
+.display_tag {
+	position: relative;
+	width: 346px;
+	height: 111px;
+	background-color: var(--mint-color);
+	border-radius: 10px;
+	border: 10px solid;
+	border-color: var(--lblue-color);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.display_tag .sample-text {
+	position: relative;
+	font-family: customfont;
+	font-size: var(--header-text);
+	color: var(--Dark-color);
+	margin-left: 110px;
+	margin-right: 110px;
+	top: 11px;
+}
+
+/** shop and item contatiner **/
+.shop_con {
+	display: inline-flex;
+}
+/* Shop css */
+.shop {
+	max-width: 100%;
+	max-height: 100%;
+	width: 300px;
+	height: 100%;
+	background-image: url(../images/Grandma_coffee_plants_01.jpg);
+	border-radius: 10px;
+	background-size: cover;
+	background-position: 50%;
+	margin-left: 3vw;
+	margin-bottom: 30px;
+}
+
+.shop .overlap-group {
+	position: relative;
+	height: 520px;
+	border-radius: 10px 0px 0px 10px;
+	border: 10px solid;
+	border-color: var(--Dark-color);
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		rgba(217, 217, 217, 0) 0%,
+		rgb(44, 54, 57) 140%
+	);
+}
+.shop .Shoptitle{
+	position: absolute;
+	top: 405px;
+	left: 19px;
+	color: whitesmoke;
+	font-size: var(--header-text);
+	white-space: nowrap;
+}
+
+.shop .des_text {
+	position: absolute;
+	width: 312px;
+	top: 452px;
+	left: 19px;
+	font-size: 16px;
+	color: whitesmoke;
+}
+
+/** iteam card **/
+.item_card {
+	width: 350px;
+	height: 520px;
+	background-image: url(../images/test_photo.jpg);
+	background-size: cover;
+}
+
+.item_card .item_name {
+	position: absolute;
+	top: 400px;
+	left: 70px;
+	font-size: 30px;
+	color: whitesmoke;
+	white-space: nowrap;
+}
+
+.item_card .item_text {
+	position: absolute;
+	width: 312px;
+	top: 452px;
+	left: 70px;
+	font-size: 1.6rem;
+	color: whitesmoke;
+}
+
+.item_card .overlap-group {
+	position: relative;
+	height: 520px;
+	border: 10px solid;
+	border-color: var(--Dark-color);
+}
+
+/* carausol */
+.carousel-inner img {
+  margin: 0px 50px 0px 180px;
+  width: 75%;
+  height: 50%;
+}
+
+/** HEADER **/
+.header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 120px;
+  background-color: var(--lblue-color);
+  box-shadow: 4px 4px 4px #00000040;
+}
+
+/**
+.header .cart_component {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50px;
+  left: 1300px;
+  color: var(--Lb-color);
+}
+
+.header .search_component {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50px;
+  left: 1100px;
+  color: var(--Lb-color);
+}
+
+.header .profile_component {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50px;
+  left: 1200px;
+  color: var(--Lb-color);
+}
+**/
+/** Name and logo **/
+.header .text-wrapper {
+  position: absolute;
+  margin-top: 30px;
+  left: 40%;
+  font-family: customfont;
+  color: var(--Lb-color);
+  font-size: 40px;
+}
+
+.header .div {
+  position: absolute;
+  margin-top: 30px;
+  left: 70%;
+  font-family: customfont;
+  color: var(--Lb-color);
+  font-size: 40px;
+}
+
+.header .artboard {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 29px;
+  left: 48vw;
 }
 
 /** Footer **/
+.end-section a {
+	color: var(--Dark-color);
+}
 .end-section {
   position: relative;
   width: 100%;
-  height: 463px;
+  height: 35vw;
   background-color: var(--b-color);
 }
 
@@ -70,8 +230,9 @@ body {
   position: absolute;
   width: 66px;
   height: 66px;
-  top: 259px;
-  left: 50px;
+  top: 19vw;
+  left: 5vw;
+  margin: auto;
   background-image: url(../images/1x/twitter.png);
 }
 
@@ -79,8 +240,9 @@ body {
   position: absolute;
   width: 66px;
   height: 66px;
-  top: 259px;
-  left: 130px;
+  top: 19vw;
+  left: 11vw;
+  margin: auto;
   background-image: url(../images/1x/facebook.png);
 }
 
@@ -88,8 +250,9 @@ body {
   position: absolute;
   width: 66px;
   height: 66px;
-  top: 259px;
-  left: 210px;
+  top: 19vw;
+  left: 17vw;
+  margin: auto;
   background-image: url(../images/1x/instagram.png);
 }
 
@@ -320,145 +483,129 @@ body {
 
 .end-section .p {
   position: absolute;
-  top: 423px;
-  left: 777px;
-  font-family: var(--smaller-card-description-font-family);
-  font-weight: var(--smaller-card-description-font-weight);
+  top: 32vw;
+  left: 25vw;
   color: var(--dark-a);
-  font-size: var(--smaller-card-description-font-size);
-  letter-spacing: var(--smaller-card-description-letter-spacing);
-  line-height: var(--smaller-card-description-line-height);
-  white-space: nowrap;
-  font-style: var(--smaller-card-description-font-style);
+  font-size: var(--description-text);
 }
 
 .end-section .artboard {
   position: absolute;
-  width: 190px;
-  height: 190px;
-  top: 21px;
-  left: 40px;
+  width: 15vw;
+  height: 15vw;
+  top: 10px;
+  left: 20px;
 }
 
-/** HEADER **/
-.header {
-  position: relative;
-  width: 100%;
-  height: 120px;
-  background-color: var(--lblue-color);
-  box-shadow: 4px 4px 4px #00000040;
+@media (max-width: 479px) {
+	:root {
+		--header-text: 30px;
+		--description-text: 10px;
+	}
+	.text-wrapper-3, .text-wrapper-4, .text-wrapper-5, .text-wrapper-6,
+	.text-wrapper-7, .text-wrapper-8, .text-wrapper-9, .text-wrapper-10,
+	.text-wrapper-11, .text-wrapper-12, .text-wrapper-13, .text-wrapper-14  {
+		display: none;
+	}
+	.header .artboard {
+		left: 35vw;
+	}
+	.header .artboard {
+		left: 42vw;
+	}
+	.display_tag {
+		position: relative;
+		width: 150px;
+		height: 80px;
+	}
+	.display_tag .sample-text {
+		right: 80px;
+	}
+/** shop and item contatiner **/
+/* Shop css */
+.shop {
+	max-width: 100%;
+	max-height: 100%;
+	width: 90vw;
+	height: 150px;
+	margin-left: 5vw;
+	margin-bottom: 30px;
+}
+.shop .overlap-group {
+	height: 150px;
+	border-radius: 10px 10px 0px 0px;
+}
+.shop .Shoptitle{
+	top: 60px;
+	left: 19px;
+	color: whitesmoke;
+	white-space: nowrap;
+}
+.shop .des_text {
+	width: 312px;
+	top: 100px;
+	left: 19px;
+	font-size: 16px;
+	color: whitesmoke;
 }
 
-.header .mene-button {
-  position: absolute;
-  width: 85px;
-  height: 52px;
-  top: 34px;
-  left: 33px;
-  background-color: var(--Lb-color);
-  border-radius: 10px;
-  border: 2px solid;
-  border-color: var(--Dark-color);
+/** iteam card **
+.item_card {
+	width: 350px;
+	height: 520px;
+	background-image: url(../images/test_photo.jpg);
+	background-size: cover;
 }
 
-.header .img {
-  top: 26px;
-  position: absolute;
-  width: 62px;
-  height: 45px;
-  left: 0;
+.item_card .item_name {
+	position: absolute;
+	top: 400px;
+	left: 70px;
+	font-size: 30px;
+	color: whitesmoke;
+	white-space: nowrap;
 }
 
-.header .cart_component {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 45px;
-  left: 1100px;
+.item_card .item_text {
+	position: absolute;
+	width: 312px;
+	top: 452px;
+	left: 70px;
+	font-size: 1.6rem;
+	color: whitesmoke;
 }
 
-.header .search_component {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 45px;
-  left: 1200px;
+.item_card .overlap-group {
+	position: relative;
+	height: 520px;
+	border: 10px solid;
+	border-color: var(--Dark-color);
 }
-
-.header .profile_component {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 45px;
-  left: 1300px;
-}
-/** Name and logo **/
-.header .text-wrapper {
-  position: absolute;
-  top: 29px;
-  left: 580px;
-  font-family: customfont;
-  color: var(--Lb-color);
-  font-size: 40px;
-  text-align: center;
-}
-
-.header .div {
-  position: absolute;
-  top: 29px;
-  left: 780px;
-  font-family: customfont;
-  color: var(--Lb-color);
-  font-size: 40px;
-  text-align: center;
-}
-
-.header .artboard {
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  top: 28px;
-  left: 700px;
-}
-/** **/
-
-/*
-.logo img {
-  width: 64px;
-  height: 64px;
-  position: relative;
-  flex-shrink: 0;
-}
-.navbar-brand {
-  padding-top: 25px;
-}
-
-.navbar-brand a {
-	text-align: center;
-}
-
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-
-#nav-list {
-  margin-top: 10px;
-}
-
-#nav-list a {
-  color: #dcd7c9;
-  text-align: center;
-}
-
-#nav-list a span {
-  font-size: 1.8em;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
-}
-
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+	/* end */
+	.end-section .p{
+		top: 28vw;
+		left: 18px;
+	}
+	.end-section .artboard {
+		width: 64px;
+		height: 64px;
+	}
+	.end-section .exclude {
+		width: 20px;
+		height: 20px;
+		background-size: cover;
+	}
+	.end-section .exclude-2 {
+		width: 20px;
+		height: 20px;
+		background-size: cover;
+	}
+	.end-section .exclude-3 {
+		width: 20px;
+		height: 20px;
+		background-size: cover;
+	}
+	.div, .text-wrapper, /*delete->*/.component-2 {
+		display: none;
+	}
 }
