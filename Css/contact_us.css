@@ -10,8 +10,8 @@
 	--Dark-color: #2c3639;
 	--mint-color: #abc4aa;
 	/** font size **/
-	--header-text: 40px;
-	--description-text: 16px;
+	--header-text: 4rem;
+	--description-text: 2rem;
 
 }
 
@@ -38,8 +38,9 @@ section {
 }
 
 .display {
-  position: relative;
-  margin-left: 45%;
+  position: absolute;
+  margin-left: 42%;
+  margin-top: 8%;
   font-family: customfont;
   font-size: var(--header-text);
   color: var(--Dark-color);
@@ -51,94 +52,64 @@ section {
   box-shadow: 0px 10px 50px whitesmoke;
 }
 
-/** shop and item contatiner **/
-.shop_con {
-	display: inline-flex;
-}
-/* Shop css */
-.shop {
-	max-width: 100%;
-	max-height: 100%;
-	width: 300px;
-	height: 100%;
-	background-image: url(../images/Grandma_coffee_plants_01.jpg);
-	border-radius: 10px;
-	background-size: cover;
-	background-position: 50%;
-	margin-left: 3vw;
-	margin-bottom: 30px;
+.pageheader_overlay {
+  position: relative;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(217, 217, 217, 0) 0%,
+    rgb(44, 54, 57) 140%
+  );
 }
 
-.shop .overlap-group {
-	position: relative;
-	height: 520px;
-	border-radius: 10px 0px 0px 10px;
-	border: 10px solid;
-	border-color: var(--Dark-color);
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		rgba(217, 217, 217, 0) 0%,
-		rgb(44, 54, 57) 140%
-	);
-}
-.shop .Shoptitle{
-	position: absolute;
-	top: 405px;
-	left: 19px;
-	color: whitesmoke;
-	font-size: var(--header-text);
-	white-space: nowrap;
+.pageheader{
+  height: 280px;
+  width:100%;
+  background-image: url(../images/Grandma_coffee_plants_01.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.shop .des_text {
-	position: absolute;
-	width: 312px;
-	top: 452px;
-	left: 19px;
-	font-size: 16px;
-	color: whitesmoke;
+.background {
+  margin: auto;
+  position: relative;
+  height: 25vw;
+  width: 95vw;
+  background-color: var(--mint-color);
+  border-radius: 10px;
 }
 
-/** iteam card **/
-.item_card {
-	width: 350px;
-	height: 520px;
-	background-image: url(../images/test_photo.jpg);
-	background-size: cover;
+.background .question {
+  font-family: customfont;
+  font-size: var(--header-text);
+  text-align: center;
+  padding-top: 2vw;
 }
 
-.item_card .item_name {
-	position: absolute;
-	top: 400px;
-	left: 70px;
-	font-size: 30px;
-	color: whitesmoke;
-	white-space: nowrap;
+.bodytext {
+  font-size: var(--description-text);
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
-.item_card .item_text {
-	position: absolute;
-	width: 312px;
-	top: 452px;
-	left: 70px;
-	font-size: 1.6rem;
-	color: whitesmoke;
+.twitter {
+  position: relative;
+  background-image: url(../images/1x/1x/Artboard 2.png);
 }
-
-.item_card .overlap-group {
-	position: relative;
-	height: 520px;
-	border: 10px solid;
-	border-color: var(--Dark-color);
+/**
+.background .facebook{
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  background-image: url(../images/1x/1x/Artboard 2_1.png);
 }
-
-/* carausol */
-.carousel-inner img {
-  margin: 0px 50px 0px 180px;
-  width: 75%;
-  height: 50%;
+.background .instagram{
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  background-image: url(../images/1x/1x/Artboard 2_2.png);
 }
-
+**/
 /** HEADER **/
 .header {
   position: relative;
