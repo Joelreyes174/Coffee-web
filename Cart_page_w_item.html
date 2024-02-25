@@ -52,45 +52,63 @@
 		</div>
 		<div class="box"></div>
 			<div class="background">
-				<form class="form">
-					<h3>Want a Subscription?</h3>
-					<ul>
-						<li>
-							<input type="radio" name="yes" value="yes">
-							<label for="card">Yes, of course</label>
-						</li>
-						<li>
-							<input type="radio" name="no" value="no">
-							<label for="card">Not Today</label>
-						</li>
-					</ul>
-					<hr class="dev">
-					<h3>Personal Information</h3>
-					<div>
-						<label for="email">Email:</label>
-						<br>
-						<input type="text" id="email" name="email">
-					</div>
-					<div>
-						<label for="address">Address:</label>
-						<br>
-						<input type="text" name="Street">
-						<input type="text" name="City">
-						<input type="text" name="State">
-						<input type="text" name="Zip">
-					</div>
-					<h3>Payment Method</h3>
-					<ul>
-						<li>
-							<input type="radio" name="card" value="card">
-							<label for="card">Card</label>
-						</li>
-						<li>
-							<input type="radio" name="paypal" value="paypal">
-							<label for="card">Paypal</label>
-						</li>
-					</ul>
-					<button class="pay_now" type="submit">Pay Now</button>
+				<h2>Personal Information</h2>
+				<form id="personalform">
+					<!-- email -->
+					<label for="email">Email Address:</label>
+					<br>
+					<input type="text" name="email" id="bar"></input>
+					<br>
+					<!-- Address -->
+					<label for="address">Address</label>
+					<br>
+					<input type="text" name="address" id="bar"></input>
+					<br>
+					<!-- -->
+					<input type="text" name="city" id="bar2"></input><input type="state" name="state" id="bar2"></input>
+					<br>
+					<input type="text" name="zip" id="bar2"></input>
+				</form>
+
+				<h2>Choose Payment Option:</h2>
+				<form id="paymentForm">
+				  <label>
+				    <input type="radio" name="payment" value="creditCard" onclick="showPaymentOption('creditCard')"> Credit Card
+				  </label>
+				  <label>
+				    <input type="radio" name="payment" value="paypal" onclick="showPaymentOption('paypal')"> PayPal
+				  </label>
+
+				  <div id="creditCardOption" class="payment-option">
+				    <!-- Credit Card Payment Option -->
+				    <h3>Credit Card Information</h3>
+				    <!-- Credit Card Fields: Name on Card, Card Number, Expiration Date, CVV -->
+				    <!-- Add your HTML form fields for credit card payment here -->
+				    <label for="cardnum">Card Number:</label>
+				    <br>
+				    <input type="text" name="cardnum" id="bar"></input>
+				    <br>
+				    <label for="birth">DOB:</label>
+				    <br>
+				    <input type="text" name="birth" id="bar3"></input>
+				    <label for="cvv">CVV</label>
+				    <br>
+				    <input type="text" name="cvv" id="bar4"></input>
+				    <br>
+				    <label for="namecard">Name of card:</label>
+				    <br>
+				    <input type="msg" name="namecard">
+				    <br>
+				    <button type="submit">Submit</button>
+				  </div>
+
+				  <div id="paypalOption" class="payment-option">
+				    <!-- PayPal Payment Option -->
+				    <h3>Pay with PayPal</h3>
+				    <!-- PayPal Checkout Button -->
+				    <!-- Add your PayPal checkout button or link here -->
+				    <button type="submit">Submit</button>
+				  </div>
 				</form>
 			</div>
 		<div class="box"></div>
@@ -128,6 +146,7 @@
 
 	<script src="js/jquery-3.6.4.min copy.js"></script>
 	<script src="js/bootstrap.min copy.js"></script>
+	<script src="js/cart page.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
