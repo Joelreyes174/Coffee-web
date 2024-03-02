@@ -10,10 +10,8 @@
 	--Dark-color: #2c3639;
 	--mint-color: #abc4aa;
 	/** font size **/
-	--header-text: 40px;
-	--description-text: 16px;
-  --item-text: 30px;
-
+	--header-text: 4rem;
+	--description-text: 2rem;
 
 }
 
@@ -40,8 +38,9 @@ section {
 }
 
 .display {
-  position: relative;
-  margin-left: 45%;
+  position: absolute;
+  margin-left: 42%;
+  margin-top: 8%;
   font-family: customfont;
   font-size: var(--header-text);
   color: var(--Dark-color);
@@ -53,95 +52,21 @@ section {
   box-shadow: 0px 10px 50px whitesmoke;
 }
 
-/** shop and item contatiner **/
-.shop_con {
-	display: inline-flex;
-}
-/* Shop css */
-.shop {
-	max-width: 100%;
-	max-height: 100%;
-	width: 300px;
-	height: 520px;
-	background-image: url(../images/Grandma_coffee_plants_01.jpg);
-	border-radius: 10px;
-	background-size: cover;
-	background-position: 50%;
-	margin-left: 3vw;
-	margin-bottom: 30px;
+.pageheader_overlay {
+  position: relative;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(217, 217, 217, 0) 0%,
+    rgb(44, 54, 57) 140%
+  );
 }
 
-.shop .overlap-group {
-	position: relative;
-	height: 520px;
-  max-width: 300px;
-  max-height: 520px;
-	border-radius: 10px 0px 0px 10px;
-	border: 10px solid;
-	border-color: var(--Dark-color);
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		rgba(217, 217, 217, 0) 0%,
-		rgb(44, 54, 57) 140%
-	);
-}
-
-.shop .Shoptitle{
-	position: absolute;
-	top: 390px;
-	left: 20px;
-	color: whitesmoke;
-	font-size: var(--header-text);
-	white-space: nowrap;
-}
-
-.shop .des_text {
-	position: absolute;
-	width: 312px;
-	top: 452px;
-	left: 25px;
-	font-size: 16px;
-	color: whitesmoke;
-}
-
-/** iteam card **/
-.item_card {
-	width: 350px;
-	height: 520px;
-	background-image: url(../images/single_photo.png);
-	background-size: cover;
-}
-
-.item_card .item_name {
-	position: relative;
-	top: 395px;
-	text-align: center;
-	font-size: var(--item-text);
-	color: whitesmoke;
-	white-space: nowrap;
-}
-
-.item_card .item_text {
-	position: absolute;
-	width: 312px;
-	top: 452px;
-	left: 70px;
-	font-size: 1.6rem;
-	color: whitesmoke;
-}
-
-.item_card .overlap-group {
-	position: relative;
-	height: 520px;
-	border: 10px solid;
-	border-color: var(--Dark-color);
-}
-
-/* carausol */
-.carousel-inner img {
-  margin: 0px 50px 0px 180px;
-  width: 75%;
-  height: 50%;
+.pageheader{
+  height: 280px;
+  width:100%;
+  background-image: url(../images/Grandma_coffee_plants_01.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /** HEADER **/
@@ -216,90 +141,42 @@ section {
 	color: var(--Dark-color);
 }
 .end-section {
-  display: flex;
   position: relative;
   width: 100%;
-  height: 30vw;
+  height: 35vw;
   background-color: var(--b-color);
 }
-/** Socials **/
-.end-section .social_box {
-  display: inline-flex;
-  margin-top: 17vw;
-  margin-left: 1.5vw;
-}
-.social_box .socials {
-  width: 6vw;
-  height: 6vw;
-  padding: 10px;
-  background-size: cover;
-}
 
-/** End socials **/
-.end-section .artboard {
+.end-section .exclude-3 {
   position: absolute;
-  width: 15vw;
-  height: 15vw;
-  top: 10px;
-  left: 20px;
+  width: 66px;
+  height: 66px;
+  top: 19vw;
+  left: 5vw;
+  margin: auto;
+  background-image: url(../images/1x/twitter.png);
 }
-/** Email component **/
-.end-section .email-thing {
+
+.end-section .exclude {
   position: absolute;
-  margin-top: 350px;
-  margin-left: 20px;
-
+  width: 66px;
+  height: 66px;
+  top: 19vw;
+  left: 11vw;
+  margin: auto;
+  background-image: url(../images/1x/facebook.png);
 }
 
-#email {
-  position: relative;
-  padding-left: 10px;
-  width: 400px;
-  height: 64px;
-  font-size: var(--item-text);
-  border: 10px solid;
-  border-color: #2c3639;
-  border-radius: 10px;
-  background-color: #dcd7c9;
-  color: #2c3639;
-}
-#submit {
-  position: relative;
-  width: 150px;
-  height: 64px;
-  font-size: 30px;
-  border: 10px solid;
-  border-color: #2c3639;
-  border-radius: 10px;
-  background-color: #dcd7c9;
-  color: #2c3639;
+.end-section .exclude-2 {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 19vw;
+  left: 17vw;
+  margin: auto;
+  background-image: url(../images/1x/instagram.png);
 }
 
-#submit :hover {
-  background-color: #abc4aa;
-}
-/** End Email component **/
-/** site map **/
-.end-section #sitemap {
-  text-align: center;
-  margin-left: 10vw;
-  margin-top: 50px;
-  position: relative;
-  display: inline-table;
-}
-#sitemap li{
-  list-style-type: none;
-  font-size: var(--item-text);
-  margin: 30px;
-}
-#sitemap .label {
-  font-size: var(--header-text);
-  text-decoration: underline;
-  font-weight: 700;
-  color: var(--Dark-color);
-}
-
-/** end site map **/
 .end-section .component-2 {
   width: 460px;
   height: 63px;
@@ -527,10 +404,18 @@ section {
 
 .end-section .p {
   position: absolute;
-  top: 400px;
-  left: 600px;
+  top: 32vw;
+  left: 25vw;
   color: var(--dark-a);
   font-size: var(--description-text);
+}
+
+.end-section .artboard {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  top: 10px;
+  left: 20px;
 }
 
 @media (max-width: 479px) {

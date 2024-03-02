@@ -5,7 +5,7 @@
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title></title>
-		<link rel="icon" type="image/x-icon" href="../images/small web logo.png">
+		<link rel="icon" type="image/x-icon" href="/images/small web logo.png">
 		<link rel="stylesheet" href="Css/styles.css">
 		<link rel="stylesheet" href="Css/bootstrap.min copy.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -23,7 +23,7 @@
 			</a>
 	      </div>
 	      <div class="profile_component">
-	      	<a href="#" class="glyph_link">
+	      	<a href="Account_page.html" class="glyph_link">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
 				</svg>
 			</a>
@@ -79,31 +79,38 @@
         <div class="box"></div>
         <!--- Shops --->
         <div class=shop_con>
-        	<div class="shop mobile_version">
-        		<div class="overlap-group">
-        			<div class="Shoptitle">Shop Coffee</div>
-        			<p class="des_text">Shop for a wide varity of roasts</p>
-        		</div>
-        	</div>
-      
-        	<div class="item_card">
-        		<div class="overlap-group">
-					<div class="item_name">Coffee Name</div>
-					<p class="item_text">Maybe some Flavor notes</p>
-				</div>
-        	</div>
-        	<div class="item_card">
-        		<div class="overlap-group">
-					<div class="item_name">Coffee Name</div>
-					<p class="item_text">Maybe some Flavor notes</p>
-				</div>
-        	</div>
-        	<div class="item_card mobile_none">
-        		<div class="overlap-group">
-					<div class="item_name">Coffee Name</div>
-					<p class="item_text">Maybe some Flavor notes</p>
-				</div>
-        	</div>
+        	<a href="coffee_shop_page.html">
+	        	<div class="shop mobile_version">
+	        		<div class="overlap-group">
+	        			<h3 class="Shoptitle">Shop Coffee</h3>
+	        			<p class="des_text">Shop for a wide varity of roasts</p>
+	        		</div>
+	        	</div>
+      		</a>
+      		<a href="coffee_8oz.html">
+	        	<div class="item_card">
+	        		<div class="overlap-group">
+						<h3 class="item_name">Coffee Name-8oz</h3>
+						<p class="item_text">Maybe some Flavor notes</p>
+					</div>
+	        	</div>
+        	</a>
+        	<a href="coffee_12oz.html">
+	        	<div class="item_card">
+	        		<div class="overlap-group">
+						<h3 class="item_name">Coffee Name-12oz</h3>
+						<p class="item_text">Maybe some Flavor notes</p>
+					</div>
+	        	</div>
+        	</a>
+        	<a href="coffee_16oz.html">
+	        	<div class="item_card mobile_none">
+	        		<div class="overlap-group">
+						<h3 class="item_name">Coffee Name-16oz</h3>
+						<p class="item_text">Maybe some Flavor notes</p>
+					</div>
+	        	</div>
+        	</a>
         </div>
         
         <div>
@@ -113,32 +120,53 @@
 	<!--- Footer --->
 	<footer class="end-section">
 		<!--- Socials --->
-      <div class="exclude-3"></div>
-      <div class="exclude"></div>
-      <div class="exclude-2"></div>
+		<div class="social_box">
+			<a href="#">
+				<img class="socials" src="images/1x/twitter.png"/>
+			</a>	
+			<a href="#">
+				<img class="socials" src="images/1x/facebook.png"/>
+			</a>	
+			<a href="#">
+				<img class="socials" src="images/1x/instagram.png"/>
+			</a>	
+		</div>
 		<!---- Email thing ----->
-	      <div class="component-2">
-	        <div class="text-wrapper">Email Address...</div>
-	        <div class="div-wrapper">
-	        	<div class="text-wrapper-2">Submit</div>
-	        </div>
-	      </div>
-      <div class="text-wrapper-3">Coffee</div>
-      <div class="text-wrapper-4">Apparel</div>
-      <div class="text-wrapper-5">Company</div>
-      <div class="text-wrapper-6"><a href="coffee_8oz.html">8oz Coffee Bag</a></div>
-      <div class="text-wrapper-7"><a href="coffee_12oz.html">12oz Coffee Bag</a></div>
-      <div class="text-wrapper-8"><a href="coffee_16oz.html">16oz Coffee Bag</a></div>
-      <div class="text-wrapper-9"><a href="#">Mugs</a></div>
-      <div class="text-wrapper-10"><a href="#">Hats</a></div>
-      <div class="text-wrapper-11"><a href="#">Accessories</a></div>
-      <div class="text-wrapper-12"><a href="#">About Us</a></div>
-      <div class="text-wrapper-13"><a href="contant_us.html">Contact Us</a></div>
-      <div class="text-wrapper-14"><a href="#">FAQ</a></div>
-      <p class="p">Copyright @ 2023 MV company</p>
-      <a href="index.html">
-      	<img class="artboard" src="images/Endcard_logo.png"/>
-  	  </a>	
+		<form class="email-thing">
+		  <input id="email" type="text" name="email" placeholder="Email Address...">
+		  <input type="submit" id="submit">
+		</form>
+		<!-- Coffee -->
+		<ul id="sitemap">
+			<li class="label">
+				<a href="#">Coffee</a>
+			</li>
+			<li>
+				<a href="#">8oz Coffee Bag</a>
+			</li>
+			<li>
+				<a href="#">12oz Coffee Bag</a>
+			</li>
+			<li>
+				<a href="#">16oz Coffee Bag</a>
+			</li>
+		</ul>
+		<!-- Compan -->
+		<ul id="sitemap">
+			<li class="label">
+				<a href="#">Company</a>
+			</li>
+			<li>
+				<a href="A">About Us</a>
+			</li>
+			<li>
+				<a href="contant_us.html">Contact Us</a>
+			</li>
+		</ul>
+		<p class="p">Copyright @ 2023 MV company</p>
+		<a href="index.html">
+			<img class="artboard" src="images/Endcard_logo.png"/>
+		</a>	
 	</footer>
 
 	<script src="js/jquery-3.6.4.min copy.js"></script>
