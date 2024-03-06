@@ -16,12 +16,12 @@
 	    <div class="header">
 	      <!--- Hamburger menu --->	
 	      <!--- Right header --->
-	      <div class="search_component">
-	     	<a href="#" class="glyph_link">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-				</svg>
-			</a>
-	      </div>
+		  <form id="form"> 
+			   <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+			   <button>
+			   	<svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+			   </button>
+		  </form>
 	      <div class="profile_component">
 	      	<a href="Account_page.html" class="glyph_link">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
@@ -114,7 +114,6 @@
         </div>
         
         <div>
-        	<div class="box"></div>
         </div>
 	</section>
 	<!--- Footer --->
@@ -137,27 +136,27 @@
 		  <input type="submit" id="submit">
 		</form>
 		<!-- Coffee -->
-		<ul id="sitemap">
+		<ul class="sitemap">
 			<li class="label">
-				<a href="#">Coffee</a>
+				<a href="coffee_shop_page.html">Coffee</a>
 			</li>
 			<li>
-				<a href="#">8oz Coffee Bag</a>
+				<a href="coffee_8oz.html">8oz Coffee Bag</a>
 			</li>
 			<li>
-				<a href="#">12oz Coffee Bag</a>
+				<a href="coffee_12oz.html">12oz Coffee Bag</a>
 			</li>
 			<li>
-				<a href="#">16oz Coffee Bag</a>
+				<a href="coffee_16oz.html">16oz Coffee Bag</a>
 			</li>
 		</ul>
 		<!-- Compan -->
-		<ul id="sitemap">
+		<ul class="sitemap2">
 			<li class="label">
 				<a href="#">Company</a>
 			</li>
 			<li>
-				<a href="A">About Us</a>
+				<a href="About_us.html">About Us</a>
 			</li>
 			<li>
 				<a href="contant_us.html">Contact Us</a>
@@ -171,6 +170,7 @@
 
 	<script src="js/jquery-3.6.4.min copy.js"></script>
 	<script src="js/bootstrap.min copy.js"></script>
+	<script src="js/homepage.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
