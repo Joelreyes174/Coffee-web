@@ -16,24 +16,21 @@
 	    <div class="header">
 	      <!--- Hamburger menu --->	
 	      <!--- Right header --->
-	      <div class="search_component">
-	      	<a href="#" class="glyph_link">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-				  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-				</svg>
-			</a>
-		  </div>
+		  <form id="form"> 
+			   <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+			   <button>
+			   	<svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+			   </button>
+		  </form>
 	      <div class="profile_component">
-	      	<a href="#" class="glyph_link">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-				  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+	      	<a href="Account_page.html" class="glyph_link">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
 				</svg>
 			</a>
 	      </div>
 	      <div class="cart_component">
-	      	<a href="#" class="glyph_link">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-				  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+	      	<a href="cart_page_w_item.html" class="glyph_link">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
 				</svg>
 			</a>
 	      </div>
@@ -54,44 +51,33 @@
 			<div class="pageheader"></div>
 		</div>
 		<div class="box"></div>
-			<div class="filterbox"></div>
+			<div class="filterbox">
+				<h3>Region:</h3>
+				<ul id="filer-options">
+					<li><input type="checkbox" value="Indonesia_origin" data-filter_id="Indonesia">Indonesia</li>
+					<li><input type="checkbox" value="Costa-Rica_origin" data-filter_id="Costa Rica">Costa Rica</li>
+					<li><input type="checkbox" value="El-Salvardor_origin" data-filter_id="El Salvardor">El Salvardor</li>
+				</ul>
+			</div>
 			<div class="shop_con">
-				<a href="coffee_8oz.html">
-		        	<div class="item_card">
+				<a href="coffee_product_template.html">
+		        	<div class="item_card Indonesia_origin">
 		        		<div class="overlap-group">
-							<div class="item_name">Coffee Name</div>
-							<p class="item_text">Maybe some Flavor notes</p>
+							<div class="item_name">{{Placeholder}}</div>
+							<p class="item_text">Indonesia origin</p>
 						</div>
 		        	</div>
 	        	</a>
-	        	<div class="item_card">
+	        	<div class="item_card El-Salvardor_origin">
 	        		<div class="overlap-group">
-						<div class="item_name">Coffee Name</div>
-						<p class="item_text">Maybe some Flavor notes</p>
+						<div class="item_name">{{Placeholder}}</div>
+						<p class="item_text">El Salvador</p>
 					</div>
 	        	</div>
-	        	<div class="item_card">
+	        	<div class="item_card Costa-Rica_origin">
 	        		<div class="overlap-group">
-						<div class="item_name">Coffee Name</div>
-						<p class="item_text">Maybe some Flavor notes</p>
-					</div>
-	        	</div>
-	        	<div class="item_card">
-	        		<div class="overlap-group">
-						<div class="item_name">Coffee Name</div>
-						<p class="item_text">Maybe some Flavor notes</p>
-					</div>
-	        	</div>
-	        	<div class="item_card">
-	        		<div class="overlap-group">
-						<div class="item_name">Coffee Name</div>
-						<p class="item_text">Maybe some Flavor notes</p>
-					</div>
-	        	</div>
-	        	<div class="item_card">
-	        		<div class="overlap-group">
-						<div class="item_name">Coffee Name</div>
-						<p class="item_text">Maybe some Flavor notes</p>
+						<div class="item_name">{{Placeholder}}</div>
+						<p class="item_text">Costa Rica</p>
 					</div>
 	        	</div>
 			</div>
@@ -100,33 +86,55 @@
 	<!--- Footer --->
 	<footer class="end-section">
 		<!--- Socials --->
-      <div class="exclude-3"></div>
-      <div class="exclude"></div>
-      <div class="exclude-2"></div>
+		<div class="social_box">
+			<a href="#">
+				<img class="socials" src="images/1x/twitter.png"/>
+			</a>	
+			<a href="#">
+				<img class="socials" src="images/1x/facebook.png"/>
+			</a>	
+			<a href="#">
+				<img class="socials" src="images/1x/instagram.png"/>
+			</a>	
+		</div>
 		<!---- Email thing ----->
-	      <div class="component-2">
-	        <div class="text-wrapper">Email Address...</div>
-	        <div class="div-wrapper">
-	        	<div class="text-wrapper-2">Submit</div>
-	        </div>
-	      </div>
-      <div class="text-wrapper-3">Coffee</div>
-      <div class="text-wrapper-4">Apparel</div>
-      <div class="text-wrapper-5">Company</div>
-      <div class="text-wrapper-6"><a href="coffee_8oz.html">8oz Coffee Bag</a></div>
-      <div class="text-wrapper-7"><a href="coffee_12oz.html">12oz Coffee Bag</a></div>
-      <div class="text-wrapper-8"><a href="coffee_16oz.html">16oz Coffee Bag</a></div>
-      <div class="text-wrapper-9"><a href="#">Mugs</a></div>
-      <div class="text-wrapper-10"><a href="#">Hats</a></div>
-      <div class="text-wrapper-11"><a href="#">Accessories</a></div>
-      <div class="text-wrapper-12"><a href="#">About Us</a></div>
-      <div class="text-wrapper-13"><a href="#">Contact Us</a></div>
-      <div class="text-wrapper-14"><a href="#">FAQ</a></div>
-      <p class="p">Copyright @ 2023 MV company</p>
-      <a href="index.html">
-      	<img class="artboard" src="images/Endcard_logo.png"/>
-  	  </a>	
+		<form class="email-thing">
+		  <input id="email" type="text" name="email" placeholder="Email Address...">
+		  <input type="submit" id="submit">
+		</form>
+		<!-- Coffee -->
+		<ul class="sitemap">
+			<li class="label">
+				<a href="coffee_shop_page.html">Coffee</a>
+			</li>
+			<li>
+				<a href="coffee_8oz.html">8oz Coffee Bag</a>
+			</li>
+			<li>
+				<a href="coffee_12oz.html">12oz Coffee Bag</a>
+			</li>
+			<li>
+				<a href="coffee_16oz.html">16oz Coffee Bag</a>
+			</li>
+		</ul>
+		<!-- Compan -->
+		<ul class="sitemap2">
+			<li class="label">
+				<a href="#">Company</a>
+			</li>
+			<li>
+				<a href="About_us.html">About Us</a>
+			</li>
+			<li>
+				<a href="contant_us.html">Contact Us</a>
+			</li>
+		</ul>
+		<p class="p">Copyright @ 2023 MV company</p>
+		<a href="index.html">
+			<img class="artboard" src="images/Endcard_logo.png"/>
+		</a>	
 	</footer>
+
 
 	<script src="js/jquery-3.6.4.min copy.js"></script>
 	<script src="js/bootstrap.min copy.js"></script>

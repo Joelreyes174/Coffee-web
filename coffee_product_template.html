@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title></title>
+    <link rel="icon" type="image/x-icon" href="/images/small web logo.png">
+  	<link rel="stylesheet" href="Css/coffee page.css">
+  	<link rel="stylesheet" href="Css/bootstrap.min copy.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+<body>
+	<!--- Header --->
+  <!--- Header --->
+    <header>
+        <div class="header">
+          <!--- Hamburger menu ---> 
+          <!--- Right header --->
+        <form id="form"> 
+           <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+           <button>
+            <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+           </button>
+        </form>
+          <div class="profile_component">
+            <a href="Account_page.html" class="glyph_link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg>
+        </a>
+          </div>
+          <div class="cart_component">
+            <a href="cart_page_w_item.html" class="glyph_link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg>
+        </a>
+          </div>
+       
+          <!--- Logo ---
+          <div class="text-wrapper">Coffee</div>
+          <div class="div">Company</div>
+          --->
+          <a href="index.html">
+            <img class="artboard" src="images/small web logo.png" alt="logo"/>
+          </a>
+        </div>
+    </header>
+	<!--- Body --->
+  <section>
+    <div class="box"></div>
+      <div class="item">
+      </div>
+      <h1>{{Placeholder}}</h1>
+      <hr class="hr">
+      <!-- Example single danger button -->
+        <!-- size drop down -->
+      <form action="#">
+        <label for="size" class="sizes">Size:</label>
+        <br>
+        <select name="beantype" id="sizetype">
+          <option value="empty">-Select Option</option>
+          <option value="8oz">8 oz</option>
+          <option value="12oz">12 oz</option>
+          <option value="16oz">16 oz</option>
+        </select>
+      </form>
+        <br>
+            <!-- size drop down -->
+      <form action="#">
+        <label for="beantype" class="bean">Bean Type:</label>
+        <br>
+        <select name="beantype" id="beantype">
+          <option value="empty">-Select Option</option>
+          <option value="whole">Whole</option>
+          <option value="ground">Ground</option>
+        </select>
+      </form>
+      <!-- Price -->
+      <div class="price">
+        <label for="price" id="price">Price:</label>
+        <output name="price" class="output">$12.00</output>
+      </div>
+      <div class="addtocart">
+        <form id='myform' method='POST' class='quantity' action='#'>
+          <input type='button' value='-' class='qtyminus minus' field='quantity' />
+          <input type='text' name='quantity' value='1' class='qty' />
+          <input type='button' value='+' class='qtyplus plus' field='quantity' />
+        </form>
+        <button id="addtocart">
+          Add to Cart!
+        </button>
+      </div>
+      <hr class="hr2">
+      <div class=text>
+        <p class="coffeedes">Roast: {{Placeholder}}<br>Origin: {{Placeholder}}<br>Flavor Profile: {{Placeholder}}</p>
+        <p class="Description">Description: {{Placeholeder}}<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae magna vitae nibh eleifend blandit. Vestibulum fringilla arcu quam, vitae varius tellus congue non. Praesent in turpis accumsan urna volutpat accumsan ac et ipsum. Nam at tellus augue. Vivamus elementum nulla ligula, eu ultricies risus congue sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, </p>
+      </div>
+    <div class="box"></div>
+  </section>
+  <!--- Footer --->
+  <footer class="end-section">
+    <!--- Socials --->
+    <div class="social_box">
+      <a href="#">
+        <img class="socials" src="images/1x/twitter.png"/>
+      </a>  
+      <a href="#">
+        <img class="socials" src="images/1x/facebook.png"/>
+      </a>  
+      <a href="#">
+        <img class="socials" src="images/1x/instagram.png"/>
+      </a>  
+    </div>
+    <!---- Email thing ----->
+    <form class="email-thing">
+      <input id="email" type="text" name="email" placeholder="Email Address...">
+      <input type="submit" id="submit">
+    </form>
+    <!-- Coffee -->
+    <ul class="sitemap">
+      <li class="label">
+        <a href="coffee_shop_page.html">Coffee</a>
+      </li>
+      <li>
+        <a href="coffee_8oz.html">8oz Coffee Bag</a>
+      </li>
+      <li>
+        <a href="coffee_12oz.html">12oz Coffee Bag</a>
+      </li>
+      <li>
+        <a href="coffee_16oz.html">16oz Coffee Bag</a>
+      </li>
+    </ul>
+    <!-- Compan -->
+    <ul class="sitemap2">
+      <li class="label">
+        <a href="#">Company</a>
+      </li>
+      <li>
+        <a href="About_us.html">About Us</a>
+      </li>
+      <li>
+        <a href="contant_us.html">Contact Us</a>
+      </li>
+    </ul>
+    <p class="p">Copyright @ 2023 MV company</p>
+    <a href="index.html">
+      <img class="artboard" src="images/Endcard_logo.png"/>
+    </a>  
+  </footer>
+
+	<script src="js/jquery-3.6.4.min copy.js"></script>
+  <script src="js/bootstrap.bundle.min.js / bootstrap.bundle.js"></script>
+	<script src="js/bootstrap.min copy.js"></script>
+  <script src="js/coffee_page.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
